@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Роботизированный сварочный комплекс — план внедрения</title>
+<meta name="description" content="Полный план внедрения роботизированного сварочного комплекса: 6 месяцев, 18 млн руб., 6 этапов, команда из 6 специалистов.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="hud">
+  <div class="hud__brand">
+    <span class="led led--on"></span>
+    <b>АСУТП / ROBOTICS CELL</b>
+    <span class="hud__sep"></span>
+    <span class="hud__dim">ПУЛЬТ УПРАВЛЕНИЯ ПРОЕКТОМ</span>
+  </div>
+  <nav class="hud__nav">
+    <a href="#passport">Паспорт</a>
+    <a href="#schedule">График</a>
+    <a href="#budget">Бюджет</a>
+    <a href="#team">Команда</a>
+    <a href="#risks">Риски</a>
+    
+  </nav>
+  <div class="hud__status">
+    <span class="led led--amber"></span> СТАТУС: ПЛАН В ПРОЦЕССЕ УТВЕРЖДЕНИЯ
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__label">ВАРИАНТ ТЕХНИЧЕСКОГО ВОПРОЩЕНИЯ · ПЛАН РЕАЛИЗАЦИИ</div>
+  <h1 class="hero__title">Роботизированный<br><span>сварочный комплекс</span></h1>
+  <p class="hero__lead">
+    Автоматизация сварочного участка машиностроительного завода: шестиосевой робот,
+    сварочный источник, двухосевой позиционер, система технического зрения,
+    ограждение и шкаф управления. Полный план внедрения — от предпроектного
+    обследования до передачи в эксплуатацию.
+  </p>
+
+  <div class="gauges">
+    <div class="gauge">
+      <div class="gauge__num">6</div>
+      <div class="gauge__unit">мес.</div>
+      <div class="gauge__cap">срок внедрения</div>
+    </div>
+    <div class="gauge">
+      <div class="gauge__num">18</div>
+      <div class="gauge__unit">млн ₽</div>
+      <div class="gauge__cap">бюджет проекта</div>
+    </div>
+    <div class="gauge">
+      <div class="gauge__num">6</div>
+      <div class="gauge__unit">этапов</div>
+      <div class="gauge__cap">с контрольными точками</div>
+    </div>
+    <div class="gauge">
+      <div class="gauge__num">6</div>
+      <div class="gauge__unit">чел.</div>
+      <div class="gauge__cap">команда проекта</div>
+    </div>
+  </div>
+
+  <div class="hero__note">
+    Типовой срок подобной работы средней сложности — <b>5–9 месяцев</b>.
+    План укладывается в нижнюю границу диапазона за счёт не уникальной конфигурации оборудования.
+  </div>
+</section>
+
+<main>
+
+<section id="passport" class="block">
+  <h2 class="block__title"><span class="block__num">01</span> Паспорт проекта</h2>
+  <div class="table">
+    <div class="table__row table__row--head">
+      <div>Параметр</div><div>Значение</div>
+    </div>
+    <div class="table__row"><div>Заказчик</div><div>Машиностроительный завод (участок сварки металлоконструкций)</div></div>
+    <div class="table__row"><div>Цель</div><div>Автоматизация сварочного участка: внедрение роботизированного комплекса (6-осевой робот, 10 кг, сварочный источник, позиционер 2 оси, система технического зрения, ограждение, шкаф управления)</div></div>
+    <div class="table__row"><div>Срок</div><div>6 месяцев с даты подписания договора</div></div>
+    <div class="table__row"><div>Бюджет</div><div>18 000 000 ₽ (оборудование + работы)</div></div>
+    <div class="table__row"><div>Команда</div><div>1 конструктор, 1 инженер АСУТП, 1 программист роботов, 1 электрик, 1 монтажник, 1 снабженец</div></div>
+    
+  </div>
+</section>
+
+<section id="schedule" class="block">
+  <h2 class="block__title"><span class="block__num">02</span> Календарный план-график</h2>
+  
+
+  <div class="gantt" id="gantt">
+    <div class="gantt__axis">
+      <span>нед.</span><span>1</span><span>5</span><span>10</span><span>15</span><span>20</span><span>26</span>
+    </div>
+
+    <div class="gantt__row"><div class="gantt__label">0 · Подготовка</div>
+      <div class="gantt__bar" style="--s:0;--w:8%">1–2</div></div>
+    <div class="gantt__row"><div class="gantt__label">1 · Проектирование</div>
+      <div class="gantt__bar" style="--s:8.3%;--w:23%">3–8</div></div>
+    <div class="gantt__row"><div class="gantt__label">2 · Поставка</div>
+      <div class="gantt__bar gantt__bar--alt" style="--s:31%;--w:23%">9–14</div></div>
+    <div class="gantt__row"><div class="gantt__label">3 · Монтаж</div>
+      <div class="gantt__bar" style="--s:53.8%;--w:15.4%">15–18</div></div>
+    <div class="gantt__row"><div class="gantt__label">4 · Программирование</div>
+      <div class="gantt__bar gantt__bar--alt" style="--s:69.2%;--w:15.4%">19–22</div></div>
+    <div class="gantt__row"><div class="gantt__label">5 · Испытания</div>
+      <div class="gantt__bar" style="--s:84.6%;--w:7.7%">23–24</div></div>
+    <div class="gantt__row"><div class="gantt__label">6 · Передача</div>
+      <div class="gantt__bar gantt__bar--alt" style="--s:88.5%;--w:11.5%">24–26</div></div>
+  </div>
+
+  <div class="stages">
+
+    <article class="stage">
+      <header class="stage__head">
+        <span class="stage__id">Этап 0</span>
+        <h3>Подготовка и предпроектные работы</h3>
+        <span class="stage__weeks">1–2 недели</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>0.1</div><div>Сбор исходных данных: чертежи изделий, карта швов, материалы, толщины, требования к качеству</div><div>Конструктор</div><div>Техническое задание (ТЗ)</div></div>
+        <div class="table__row"><div>0.2</div><div>Обследование участка: замеры площади, проверка электроснабжения (3 фазы, 380 В), сжатого воздуха, вентиляции, путей эвакуации</div><div>Конструктор, электрик</div><div>Акт обследования площадки</div></div>
+        <div class="table__row"><div>0.3</div><div>Предварительный подбор оборудования и поставщиков, запрос коммерческих предложений</div><div>Снабженец</div><div>Сравнительная таблица КП</div></div>
+        <div class="table__row"><div>0.4</div><div>Утверждение ТЗ и бюджета</div><div>Руководитель проекта</div><div>Подписанное ТЗ</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> ТЗ утверждено, площадка признана пригодной для размещения на ней требуемого оборудования.</p>
+    </article>
+
+    <article class="stage">
+      <header class="stage__head">
+        <span class="stage__id">Этап 1</span>
+        <h3>Проектирование и закупка</h3>
+        <span class="stage__weeks">недели 3–8</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>1.1</div><div>Разработка компоновки роботизированного рабочего места: зона робота, позиционер, ограждение, пульт оператора</div><div>Конструктор</div><div>(2D/3D)</div></div>
+        <div class="table__row"><div>1.2</div><div>Разработка схемы управления: ПЛК, шкаф автоматики, интеграция робота, сварочного источника, позиционера, системы зрения</div><div>Инженер АСУТП</div><div>Схема электрическая принципиальная</div></div>
+        <div class="table__row"><div>1.3</div><div>Проектирование системы безопасности: ограждение, световые завесы, аварийные остановы (соответствие ISO)</div><div>Конструктор, инженер АСУТП</div><div>Раздел «Безопасность в проекте»</div></div>
+        <div class="table__row"><div>1.4</div><div>Заключение договоров на поставку: робот, сварочный источник, горелка, станция очистки, позиционер, система зрения, шкаф управления, ограждение</div><div>Снабженец</div><div>Договоры, график поставок</div></div>
+        <div class="table__row"><div>1.5</div><div>Заказ изготовления нестандартных элементов (оснастка, рамы, кронштейны)</div><div>Конструктор, снабженец</div><div>Заказ в производство</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> проект согласован, оборудование заказано, сроки поставки подтверждены.</p>
+      <p class="stage__money"><b>Ориентировочный бюджет этапа:</b> 12-14 млн ₽ (оборудование), 1-2 млн ₽ (проектирование).</p>
+    </article>
+
+    <article class="stage">
+      <header class="stage__head">
+        <span class="stage__id">Этап 2</span>
+        <h3>Поставка и подготовка площадки</h3>
+        <span class="stage__weeks">недели 9–14</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>2.1</div><div>Подготовка площадки: бетонный пол, подводка 380 В, сжатый воздух, вытяжка сварочных аэрозолей, освещение</div><div>Электрик, монтажник</div><div>Готовая площадка</div></div>
+        <div class="table__row"><div>2.2</div><div>Изготовление ограждения и нестандартной оснастки (параллельно с поставкой)</div><div>Конструктор (надзор), снабженец</div><div>Комплект ограждения, оснастка</div></div>
+        <div class="table__row"><div>2.3</div><div>Приёмка оборудования</div><div>Инженер АСУТП, программист</div><div>Протокол</div></div>
+        <div class="table__row"><div>2.4</div><div>Доставка оборудования на площадку, входной контроль</div><div>Снабженец, монтажник</div><div>Акт приёмки</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> площадка готова, оборудование поставлено.</p>
+    </article>
+
+    <article class="stage">
+      <header class="stage__head">
+        <span class="stage__id">Этап 3</span>
+        <h3>Монтаж и интеграция</h3>
+        <span class="stage__weeks">недели 15–18</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>3.1</div><div>Установка робота на основание, монтаж позиционера, сварочного источника, станции очистки</div><div>Монтажник, электрик</div><div>Механическая сборка завершена</div></div>
+        <div class="table__row"><div>3.2</div><div>Монтаж шкафа управления, прокладка кабельных трасс, подключение силовых и сигнальных линий</div><div>Электрик, инженер АСУТП</div><div>Электромонтаж завершён</div></div>
+        <div class="table__row"><div>3.3</div><div>Установка ограждения, световых завес, аварийных кнопок, системы блокировок</div><div>Монтажник, инженер АСУТП</div><div>Система безопасности смонтирована</div></div>
+        <div class="table__row"><div>3.4</div><div>Подключение системы технического зрения (камера / лазерный сенсор), настройка интерфейсов</div><div>Инженер АСУТП, программист</div><div>Зрение интегрировано</div></div>
+        <div class="table__row"><div>3.5</div><div>Пусконаладка: проверка, калибровка, настройка обмена данными между роботом, источником и позиционером</div><div>Инженер АСУТП, программист</div><div>Ячейка в безопасном установленном состоянии</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> роботизированное место механически и электрически собрано, системы безопасности функционируют.</p>
+    </article>
+
+    <article class="stage">
+      <header class="stage__head">
+        <span class="stage__id">Этап 4</span>
+        <h3>Программирование и отработка технологии</h3>
+        <span class="stage__weeks">недели 19–22</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>4.1</div><div>Разработка управляющих программ для каждой номенклатуры изделий: траектории швов, параметры сварки (ток, скорость, подача проволоки, угол горелки)</div><div>Программист роботов</div><div>Библиотека программ</div></div>
+        <div class="table__row"><div>4.2</div><div>Настройка системы технического зрения: распознавание стыка, коррекция траектории в реальном времени</div><div>Программист, инженер АСУТП</div><div>Алгоритмы слежения за швом</div></div>
+        <div class="table__row"><div>4.3</div><div>Пробные сварки на образцах, отработка режимов, проверка качества шва (визуальный контроль, при необходимости — неразрушающий)</div><div>Программист, конструктор</div><div>Протоколы пробных свар</div></div>
+        <div class="table__row"><div>4.4</div><div>Оптимизация цикла: минимизация времени на позиционирование и сварку</div><div>Программист</div><div>Утверждённый цикл</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> технология отработана на образцах, программы готовы к приёмочным испытаниям.</p>
+    </article>
+
+    <article class="stage">
+      <header class="stage__head">
+        <span class="stage__id">Этап 5</span>
+        <h3>Приёмо-сдаточные испытания</h3>
+        <span class="stage__weeks">недели 23–24</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>5.1</div><div>Проведение приемочных испытаний на реальных изделиях согласно согласованным критериям</div><div>Инженер АСУТП, программист</div><div>Протокол SAT</div></div>
+        <div class="table__row"><div>5.2</div><div>Проверка системы безопасности: срабатывание аварийных остановов, блокировок, световых завес</div><div>Инженер АСУТП, электрик</div><div>Акт проверки безопасности</div></div>
+        <div class="table__row"><div>5.3</div><div>Проверка точности позиционирования и повторяемости</div><div>Инженер АСУТП</div><div>Протокол метрологической проверки</div></div>
+        <div class="table__row"><div>5.4</div><div>Устранение замечаний</div><div>Вся команда</div><div>Закрытый список замечаний</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> Испытания пройденны, комплекс соответствует требованиям ТЗ.</p>
+    </article>
+
+    <article class="stage stage--final">
+      <header class="stage__head">
+        <span class="stage__id">Этап 6</span>
+        <h3>Обучение персонала и передача в эксплуатацию</h3>
+        <span class="stage__weeks">недели 24–26</span>
+      </header>
+      <div class="table table--tasks">
+        <div class="table__row table__row--head"><div>№</div><div>Работа</div><div>Ответственный</div><div>Результат</div></div>
+        <div class="table__row"><div>6.1</div><div>Обучение операторов: работа с пультом, запуск / останов, смена программы, аварийные процедуры</div><div>Программист, инженер АСУТП</div><div>Журнал обучения</div></div>
+        <div class="table__row"><div>6.2</div><div>Обучение наладчиков: корректировка траекторий, замена горелки, обслуживание станции очистки</div><div>Программист</div><div>Инструкция по наладке</div></div>
+        <div class="table__row"><div>6.3</div><div>Передача документации: электрические схемы, руководства, паспорта, программы</div><div>Конструктор, инженер АСУТП</div><div>Комплект документации</div></div>
+        <div class="table__row"><div>6.4</div><div>Опытная эксплуатация (2–3 смены под наблюдением)</div><div>Вся команда</div><div>Акт ввода в эксплуатацию</div></div>
+      </div>
+      <p class="stage__gate"><b>Контрольная точка:</b> комплекс передан заказчику, персонал обучен.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="budget" class="block">
+  <h2 class="block__title"><span class="block__num">03</span> Бюджет проекта</h2>
+  <p class="block__lead">
+    Ориентировочная смета. Диапазоны основаны на рыночных данных по аналогичному
+    оборудованию; итоговая смета уточняется после получения коммерческих предложений.
+  </p>
+
+  <div class="budget">
+    <div class="budget__row" style="--a:60%;--b:100%">
+      <div class="budget__name">Робот-манипулятор 6 осей, 10 кг</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">2,5–3,5 млн</div>
+      <div class="budget__note">Цены на аналоги: от $11 500 до $24 000</div>
+    </div>
+    <div class="budget__row" style="--a:60%;--b:100%">
+      <div class="budget__name">Сварочный источник + горелка + станция очистки</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">1,5–2,5 млн</div>
+      <div class="budget__note">MIG/MAG, 350–500 А</div>
+    </div>
+    <div class="budget__row" style="--a:12%;--b:20%">
+      <div class="budget__name">Позиционер 2 оси</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">0,8–1,5 млн</div>
+      <div class="budget__note">Аналоги: от $5 500</div>
+    </div>
+    <div class="budget__row" style="--a:20%;--b:60%">
+      <div class="budget__name">Система технического зрения</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">1,5–2,5 млн</div>
+      <div class="budget__note">Лазерное слежение за швом; базовые системы — от $4 000 до $8 000</div>
+    </div>
+    <div class="budget__row" style="--a:32%;--b:60%">
+      <div class="budget__name">Шкаф управления</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">0,8–1,5 млн</div>
+      <div class="budget__note">ПЛК + контроллер робота</div>
+    </div>
+    <div class="budget__row" style="--a:12%;--b:24%">
+      <div class="budget__name">Ограждение + система безопасности</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">0,6–0,9 млн</div>
+      <div class="budget__note">Световые завесы, аварийные остановы, блокировки</div>
+    </div>
+    <div class="budget__row" style="--a:20%;--b:40%">
+      <div class="budget__name">Проектирование</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">1,0-1,5 млн</div>
+      <div class="budget__note">Конструкторские работы, схемы</div>
+    </div>
+    <div class="budget__row" style="--a:60%;--b:100%">
+      <div class="budget__name">Монтаж и пусконаладка</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">1,5–2,5 млн</div>
+      <div class="budget__note">Включая интеграцию</div>
+    </div>
+    <div class="budget__row" style="--a:32%;--b:60%">
+      <div class="budget__name">Программирование и обучение</div>
+      <div class="budget__bar"><i style="left:var(--a);width:calc(var(--b) - var(--a))"></i></div>
+      <div class="budget__sum">0,8–1,5 млн</div>
+      <div class="budget__note">Отладка траекторий, обучение</div>
+    </div>
+
+    <div class="budget__total">
+      <div class="budget__total-label">Итого (ориентир)</div>
+      <div class="budget__total-sum">11–17 млн ₽ (примерно)</div>
+      <div class="budget__total-note">Резерв на непредвиденные расходы. Бюджет 18 млн ₽ покрывает базовую и расширенную комплектацию с резервом 10–15 %.</div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="block">
+  <h2 class="block__title"><span class="block__num">04</span> Распределение задач по команде</h2>
+  <div class="team">
+    <article class="role"><h3>Конструктор</h3><p>Обследование площадки, компоновка рабочего места, проектирование оснастки, разработка ограждения, участие в проемочных испытаниях.</p></article>
+    <article class="role"><h3>Инженер АСУТП</h3><p>Схема управления, интеграция ПЛК, настройка обмена данными, пусконаладка, проверка безопасности.</p></article>
+    <article class="role"><h3>Программист роботов</h3><p>Разработка программ сварки, настройка зрения, отработка режимов, обучение персонала.</p></article>
+    <article class="role"><h3>Электрик</h3><p>Подготовка электроснабжения, монтаж силовых линий, подключение шкафа, проверка заземления.</p></article>
+    <article class="role"><h3>Монтажник</h3><p>Установка робота, позиционера, ограждения, механическая сборка.</p></article>
+    <article class="role"><h3>Снабженец</h3><p>Запрос КП, заключение договоров, контроль поставок, входной контроль.</p></article>
+  </div>
+</section>
+
+<section id="risks" class="block">
+  <h2 class="block__title"><span class="block__num">05</span> Ключевые риски и меры минимизации</h2>
+  <div class="table table--risk">
+    <div class="table__row table__row--head"><div>Риск</div><div>Вероятность</div><div>Влияние</div><div>Мера</div></div>
+    <div class="table__row">
+      <div>Задержка поставки оборудования</div>
+      <div><span class="lvl lvl--mid">Средняя</span></div>
+      <div><span class="lvl lvl--high">Высокое</span></div>
+      <div>Заключение договоров с фиксированными сроками; выбор поставщиков с наличием на складе.</div>
+    </div>
+    <div class="table__row">
+      <div>Несоответствие изделий требованиям роботизированной сварки (разброс геометрии, зазоры)</div>
+      <div><span class="lvl lvl--high">Высокая</span></div>
+      <div><span class="lvl lvl--high">Высокое</span></div>
+      <div>Проверка пригодности деталей на этапе 0; проектирование оснастки с компенсацией погрешностей.</div>
+    </div>
+    <div class="table__row">
+      <div>Сложности интеграции системы зрения</div>
+      <div><span class="lvl lvl--mid">Средняя</span></div>
+      <div><span class="lvl lvl--low">Среднее</span></div>
+      <div>Выбор проверенного поставщика; тестирование на образцах до монтажа.</div>
+    </div>
+    <div class="table__row">
+      <div>Недостаточная готовность площадки</div>
+      <div><span class="lvl lvl--mid">Средняя</span></div>
+      <div><span class="lvl lvl--high">Высокое</span></div>
+      <div>Детальное обследование на этапе 0; параллельная подготовка площадки.</div>
+    </div>
+    <div class="table__row">
+      <div>Превышение бюджета</div>
+      <div><span class="lvl lvl--low">Низкая</span></div>
+      <div><span class="lvl lvl--low">Среднее</span></div>
+      <div>Резерв 10–15 %; фиксация цен в договорах.</div>
+    </div>
+  </div>
+
+  
+</section>
+
+
+
+</main>
+
+
+
+</body>
+</html>
